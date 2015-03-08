@@ -1,7 +1,7 @@
 /* Custom CSS
 -------------------------*/
 body {
-    padding-top: 10px;
+    padding-top: 30px;
     font-family: 'RobotoDraft', 'Noto Sans', sans-serif;
     color: rgba(0, 0, 0, 0.87);
 }
@@ -15,6 +15,14 @@ a:hover {
     text-decoration: underline;
 }
 
+strong, b {
+    font-weight: 500;
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show {
+    background: transparent;
+}
+
 .full-header h1 {
     font-weight: 300;
     font-family: 'RobotoDraft', 'Noto Sans', sans-serif;
@@ -26,6 +34,100 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+.navbar-default {
+    padding: 10px 0;
+}
+
+.navbar .nav>li {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-text,
+.navbar-default .navbar-nav > li > a {
+    color: rgba(255,255,255,0.87);
+}
+
+.navbar .nav li.dropdown.open>.dropdown-toggle,
+.navbar .nav li.dropdown.active>.dropdown-toggle,
+.navbar .nav li.dropdown.open.active>.dropdown-toggle {
+    background: transparent;
+    color: rgba(255,255,255,0.87);
+}
+
+.dropdown-menu {
+    box-shadow: 0 6px 10px rgba(0,0,0,.23),0 10px 30px rgba(0,0,0,.19);
+    border-radius: 3px;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    color: #000;
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show .menu {
+    padding: 8px 0px;
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show .menu a {
+    height: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    padding: 0 15px 0 45px;
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover {
+    background: rgba(0,0,0,0.12) !important;
+}
+
+.usermenu .moodle-actionmenu .toggle-display .userbutton .usertext {
+    color: rgba(255,255,255,0.87);
+}
+
+.usermenu .moodle-actionmenu .toggle-display .userbutton .avatars .avatar,
+.usermenu .moodle-actionmenu .toggle-display .userbutton .avatars img {
+    border-radius: 50%;
+}
+
+.profilepicture img {
+    border-radius: 50%;
+}
+
+.userprofile dl.list dt {
+    font-weight: 500;
+}
+
+.userprofile dl.list dd {
+    margin-bottom: 20px;
+}
+
+/* TABS */
+
+.nav-tabs {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.nav-tabs > li {
+    border:none;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 46px;
+}
+
+.nav-tabs>li>a {
+    padding: 0 10px;
+    line-height: 46px;
+}
+
+.nav-tabs > li > a:focus,
+.nav-tabs > li > a:hover,
+.nav-tabs > li.active {
+    border-bottom: 3px solid #009587;
+    margin-bottom: -1px;
+    background: transparent;
+}
 
 select,
 input[type="text"],
@@ -256,6 +358,13 @@ div.editor_atto_toolbar button {
     border-bottom: 1px solid rgba(0,0,0,0.12);
     margin-bottom:20px;
     padding: 0 0 20px 0;
+}
+
+.course_list div:last-child { border: none;}
+
+.block_course_overview .content {
+    margin: 0;
+    padding: 0;
 }
 
 /* COURSE BOX */
